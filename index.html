@@ -1,0 +1,77 @@
+<html><head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="audios.css">
+</head>
+<body>
+
+<script>
+var sonido = new Audio();
+sonido.src="1.mp3";
+sonido.play();
+sonido.pause();
+
+var sonido1 = new Audio();
+sonido1.src="2.mp3";
+sonido1.play();
+sonido1.pause();
+
+var sonido2 = new Audio();
+sonido2.src="3.mp3";
+sonido2.play();
+sonido2.pause();
+
+var sonido3 = new Audio();
+sonido3.src="4.mp3";
+sonido3.play();
+sonido3.pause();
+
+var sonido4 = new Audio();
+sonido4.src="5.mp3";
+sonido4.play();
+sonido4.pause();
+
+function subir(){
+	sonido.volume += .1; 
+	sonido1.volume += .1; 
+	sonido2.volume += .1; 
+	sonido3.volume += .1; 
+	sonido4.volume += .1;
+}
+
+function bajar(){
+	sonido.volume -= .1;
+	sonido1.volume -= .1;
+	sonido2.volume -= .1;
+	sonido3.volume -= .1;
+	sonido4.volume -= .1;
+}
+
+</script>
+
+<div><button onclick="sonido.play()" class="a">audio 1</button></div>
+<div><button onclick="sonido1.play()" class="a1">audio 2</button></div>
+<div><button onclick="sonido2.play()" class="a2">audio 3</button></div>
+<div><button onclick="sonido3.play()" class="a3">audio 4</button></div>
+<div><button onclick="sonido4.play()" class="a4">audio 5</button></div>
+
+<div><button onclick="sonido.pause()" class="p">Pausa</button></div>
+<div><button onclick="sonido1.pause()" class="p1">Pausa</button></div>
+<div><button onclick="sonido2.pause()" class="p2">Pausa</button></div>
+<div><button onclick="sonido3.pause()" class="p3">Pausa</button></div>
+<div><button onclick="sonido4.pause()" class="p4">Pausa</button></div>
+
+
+<div class="c">
+<button onclik  ="subir()" class="s1">Subir volumen</button>
+<button onclick="bajar()" class="s">Bajar volumen</button>
+</div>
+
+<div class="t">
+	<center>JUAN JOSE PEREZ BETANCUR 
+	* 4° PARIODO 
+* NEOSISTEMAS * SEMANA 31 * MUSICA  </center>
+</div>
+
+
+
+</body></html>
